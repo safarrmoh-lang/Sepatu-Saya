@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SepatuSaya - Toko Sepatu Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>SepatuSaya</h1>
+            <p>Langkah Keren Dimulai dari Sini!</p>
+        </div>
+    </header>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="container nav-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#produk">Sepatu Pria</a>
+            <a href="#produk">Sepatu Wanita</a>
+            <a href="#promo">Promo</a>
+        </div>
+    </nav>
+
+    <main class="container" id="beranda">
+
+        <!-- Banner Promo -->
+        <section class="promo" id="promo">
+            <h2>DISKON SPESIAL!</h2>
+            <p>Temukan sepatu favoritmu dengan harga terbaik.</p>
+            <h3>Diskon hingga 50% 🔥</h3>
+        </section>
+
+        <!-- Produk -->
+        <section class="products" id="produk">
+            <h2 class="section-title">🔥 Produk Pilihan</h2>
+
+            <div class="product-list">
+
+                <!-- Produk 1 -->
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img
+                            src="https://image.807garage.com/content/uploads/2024/9/air-jordan-1-high-patent-bred-black-red-gs-women-2.jpg"
+                            alt="Air Jordan">
+                        <span class="discount">-30%</span>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Air Jordan</h3>
+                        <p class="description">
+                            Upgrade Gayamu dengan Sneakers Jordan Favoritmu.
+                        </p>
+
+                        <p class="price">Rp350.000</p>
+                        <p class="old-price">Rp500.000</p>
+
+                        <div class="rating">⭐ 4.9 | Terjual 120</div>
+
+                        <button class="buy-button"
+                            onclick="beliProduk('Air Jordan', 350000)">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Produk 2 -->
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img
+                            src="https://image.807garage.com/content/uploads/2026/3/adidas-superstar-white-black-1.jpg"
+                            alt="Adidas Superstar">
+                        <span class="discount">-20%</span>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Adidas Superstar</h3>
+                        <p class="description">
+                            Langkah Keren Dimulai dari Sepatu yang Tepat!.
+                        </p>
+
+                        <p class="price">Rp280.000</p>
+                        <p class="old-price">Rp350.000</p>
+
+                        <div class="rating">⭐ 4.8 | Terjual 85</div>
+
+                        <button class="buy-button"
+                            onclick="beliProduk('Adidas Superstar', 280000)">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Produk 3 -->
+                <article class="product-card">
+                    <div class="image-wrapper">
+                        <img
+                            src="https://image.807garage.com/content/uploads/2024/8/puma-speedcat-og-red-white-6.jpg"
+                            alt="Puma Speedcat">
+                        <span class="discount">-25%</span>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Puma Speedcat</h3>
+                        <p class="description">
+                            UNyaman Dipakai, Keren di Setiap Langkah.
+                        </p>
+
+                        <p class="price">Rp300.000</p>
+                        <p class="old-price">Rp400.000</p>
+
+                        <div class="rating">⭐ 4.7 | Terjual 64</div>
+
+                        <button class="buy-button"
+                            onclick="beliProduk('Puma Speedcat', 300000)">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 SepatuSaya | Toko Sepatu Online</p>
+    </footer>
+
+    <script>
+        function beliProduk(nama, harga) {
+            alert(
+                "Kamu memilih: " + nama +
+                "\nHarga: " + harga.toLocaleString("id-ID", {
+                    style: "currency",
+                    currency: "IDR",
+                    maximumFractionDigits: 0
+                }) +
+                "\n\nFitur pembayaran belum diaktifkan."
+            );
+        }
+    </script>
+
+</body>
+</html>
